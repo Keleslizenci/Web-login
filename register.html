@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kayıt Ol</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🍬 Kayıt Ol</h2>
+    <form onsubmit="register(event)">
+      <input type="text" placeholder="Kullanıcı Adı" required />
+      <input type="email" placeholder="E-posta" required />
+      <input type="password" placeholder="Şifre" required />
+      <input type="password" placeholder="Şifre Tekrar" required />
+      <button type="submit" class="btn red">Kayıt Ol</button>
+    </form>
+  </div>
+
+  <script>
+    function register(e) {
+      e.preventDefault();
+      alert("Kayıt başarılı! (Demo)");
+    }
+  </script>
+</body>
+</html>
